@@ -1,0 +1,105 @@
+.page-header {
+    font-size: 50px;
+    padding-top: 1in;
+    padding-bottom: 0.4in;
+    margin: 0;
+    text-align: center;
+}
+
+#nav-bar {
+    overflow: hidden;
+    background-color: rgba(80, 26, 74, 1);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+
+}
+
+#nav-bar li {
+    list-style-type: none;
+}
+
+#nav-bar a {
+    float: left;
+    text-decoration: none;
+    color: white;
+    padding: 10px 16px;
+    margin-bottom: 6px;
+    margin-top: 0;
+    font-size: 25px;
+}
+
+#nav-bar input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-right: 16px;
+  margin-top: 8px;
+  border: none;
+  font-size: 17px;
+}
+
+.firm-table {
+    border: 2px solid black;
+    margin: auto auto;
+    border-collapse: collapse;
+    line-height: 1.6;
+}
+
+
+.firm-table tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+.firm-table td {
+    font-size: 18px;
+    padding: 0.2em 0.4em;
+    text-align: center;
+
+}
+
+.firm-table th{
+    padding: 0.2in 0.1in;
+    background-color: #b6b6b6;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.name-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.name-link a:hover{
+    color: DodgerBlue;
+}
+
+.main-areas {
+    text-align: center;
+    padding: 0.3in 0.5in 0.3in 0.5in;
+    margin: auto;
+}
+
+#search-results li{
+    list-style-type: none;
+    font-size: 45px;
+    padding: 0.2em;
+    text-align: center;
+
+}
+
+#search-results a{
+    text-decoration: none;
+    color: black;
+}
+
+#search-results a:hover {
+    color: DodgerBlue;
+}
+
+
+
+

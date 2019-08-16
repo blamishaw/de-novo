@@ -1,0 +1,35 @@
+{% extends 'display/base.html' %}
+{% block content %}
+
+    <h1 class="page-header">Firm Database</h1>
+    <table class="firm-table">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Attorneys</th>
+            <th>Growth</th>
+            <th>Revenue</th>
+            <th>Country</th>
+        </tr>
+        <tbody>
+            {% for firm in firms %}
+            <tr>
+                <td class="name-link">
+                    <a href="{% url 'display-firm_page' name=firm.name %}/">{{ firm.name }}</a></td>
+
+                {% for info in firm.get_data %}
+                    {% if info %}
+                    <td>{{ info }}</td>
+                    {% else %}
+                    <td>NULL</td>
+                    {% endif %}
+                {% endfor %}
+
+            </tr>
+            {%  endfor %}
+        </tbody>
+    </table>
+
+
+
+{% endblock %}

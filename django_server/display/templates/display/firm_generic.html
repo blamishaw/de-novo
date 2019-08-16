@@ -1,0 +1,29 @@
+{% extends 'display/base.html' %}
+
+{% block content %}
+    <h1 class="page-header">{{ firm.name }}</h1>
+
+    {% if main_areas %}
+        <h3 class="main-areas">{{ main_areas }}</h3>
+    {% endif %}
+
+    {% if news == -1 %}
+        <h4 style="text-align: center">No news to display</h4>
+
+    {% else %}
+    <table class="firm-table">
+        <tr style="border: 1px solid grey">
+            <th>Article</th>
+            <th>Link</th>
+        </tr>
+        <tbody>
+            {% for headline, link in news %}
+                <tr>
+                    <td>{{ headline }}</td>
+                    <td><a href="{{ link }}" target="_blank" style="text-decoration: none">Link</a></td>
+                </tr>
+            {%  endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+{% endblock %}
